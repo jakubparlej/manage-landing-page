@@ -1,2 +1,0 @@
-(this["webpackJsonpmanage-landing-page"]=this["webpackJsonpmanage-landing-page"]||[]).push([[0],{11:function(n,e,a){"use strict";a.r(e);var t=a(1),c=a.n(t),i=a(3),s=a.n(i),r=(a(8),a(9),a(0));var d=function(){return Object(r.jsx)("div",{className:"App",children:Object(r.jsx)("h1",{children:"Manage Landing Page using React"})})};s.a.render(Object(r.jsx)(c.a.StrictMode,{children:Object(r.jsx)(d,{})}),document.getElementById("root"))},8:function(n,e,a){},9:function(n,e,a){}},[[11,1,2]]]);
-//# sourceMappingURL=main.7111fdd2.chunk.js.map

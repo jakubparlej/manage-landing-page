@@ -1,3 +1,22 @@
+@import "./variables";
+
+* {
+  font-family: $font-family;
+}
+
 h1 {
   color: #ff0000;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.section__padding {
+  padding: 3.5rem 10rem;
+}
+
+.section__margin {
+  margin: 3.5rem 10rem;
 }

@@ -1,9 +1,10 @@
 import "./App.scss";
+import { Navbar } from "./components";
 
 function App() {
   return (
     <div className="App">
-      <h1>Manage Landing Page using React</h1>
+      <Navbar />
     </div>
   );
 }

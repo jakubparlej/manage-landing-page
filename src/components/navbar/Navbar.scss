@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    display: flex;
+    list-style: none;
+
+    a {
+      color: $darkBlue;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 200ms ease-in;
+
+      &:hover {
+        color: $darkGrayishBlue;
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

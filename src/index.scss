@@ -1,1 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
 
+$font-family: "Be Vietnam Pro", sans-serif;
+
+$brightRed: hsl(12, 88%, 59%);
+$darkBlue: hsl(228, 39%, 23%);
+
+$darkGrayishBlue: hsl(227, 12%, 61%);
+$veryDarkBlue: hsl(233, 12%, 13%);
+$veryPaleRed: hsl(13, 100%, 96%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+// Screen sizes:
+
+$breakpoints-up: (
+  "sm": 577px,
+  "md": 769px,
+  "lg": 993px,
+  "xl": 1201px,
+);
+
+$breakpoints-down: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+@mixin breakpoint-down($breakpoint) {
+    @media (max-width: map-get($breakpoints-down, $breakpoint)) {
+      @content;
+    }
+}
+
+@mixin breakpoint-up($breakpoint) {
+    @media (min-width: map-get($breakpoints-up, $breakpoint)) {
+      @content;
+    }
+}

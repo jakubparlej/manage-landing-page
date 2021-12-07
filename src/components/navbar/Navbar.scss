@@ -1,17 +1,24 @@
-@import "../../variables";
+@import "../../index.scss";
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 
-  &__menu {
+  @include breakpoint-down('md') {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  &__links {
     display: flex;
     list-style: none;
 
     a {
       color: $darkBlue;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500;
       transition: color 200ms ease-in;
 
@@ -22,6 +29,38 @@
       &:not(:last-child) {
         margin-right: 2rem;
       }
+    }
+
+    @include breakpoint-down('lg') {
+      display: none;
+    }
+  }
+
+  &__btn {
+    @include breakpoint-down('lg') {
+      display: none;
+    }
+  }
+
+  &__menu {
+    &-container {
+      position: absolute;
+      top: 7rem;
+      left: 2rem;
+      right: 2rem;
+      text-align: center;
+      background: $veryLightGray;
+      padding: 2rem 3rem;
+      z-index: 2;
+    }
+
+    &-links {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    @include breakpoint-up('lg') {
+      display: none;
     }
   }
 }

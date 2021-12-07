@@ -1,4 +1,4 @@
-@import "./variables";
+@import "./index.scss";
 
 * {
   font-family: $font-family;
@@ -14,9 +14,47 @@ a {
 }
 
 .section__padding {
-  padding: 3.5rem 10rem;
+  padding: 0 10rem;
+
+  @include breakpoint-down('lg') {
+    padding: 0 8rem;
+  }
+
+  @include breakpoint-down('md') {
+    padding: 0 4rem;
+  }
+
+  @include breakpoint-down('sm') {
+    padding: 0 2rem;
+  }
 }
 
 .section__margin {
-  margin: 3.5rem 10rem;
+  margin: 0 10rem;
+
+  @include breakpoint-down('lg') {
+    margin: 0 8rem;
+  }
+
+  @include breakpoint-down('md') {
+    margin: 0 4rem;
+  }
+
+  @include breakpoint-down('sm') {
+    margin: 0 2rem;
+  }
+}
+
+.fade-in {
+  animation: fade-in 300ms ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

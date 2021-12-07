@@ -52,11 +52,16 @@
       background: $veryLightGray;
       padding: 2rem 3rem;
       z-index: 2;
+      border-radius: 5px;
     }
 
     &-links {
       font-size: 18px;
       font-weight: 500;
+
+      p {
+        margin-bottom: 2rem;
+      }
     }
 
     @include breakpoint-up('lg') {

@@ -1,11 +1,13 @@
 @import "./index.scss";
 
-* {
-  font-family: $font-family;
+body {
+  overflow-x: hidden;
 }
 
-h1 {
-  color: #ff0000;
+* {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -17,7 +19,7 @@ a {
   padding: 0 10rem;
 
   @include breakpoint-down('lg') {
-    padding: 0 8rem;
+    padding: 0 6rem;
   }
 
   @include breakpoint-down('md') {
@@ -33,7 +35,7 @@ a {
   margin: 0 10rem;
 
   @include breakpoint-down('lg') {
-    margin: 0 8rem;
+    margin: 0 6rem;
   }
 
   @include breakpoint-down('md') {

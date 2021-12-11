@@ -18,15 +18,15 @@ a {
 .section__padding {
   padding: 0 10rem;
 
-  @include breakpoint-down('lg') {
+  @include breakpoint-down("lg") {
     padding: 0 6rem;
   }
 
-  @include breakpoint-down('md') {
+  @include breakpoint-down("md") {
     padding: 0 4rem;
   }
 
-  @include breakpoint-down('sm') {
+  @include breakpoint-down("sm") {
     padding: 0 2rem;
   }
 }
@@ -34,15 +34,15 @@ a {
 .section__margin {
   margin: 0 10rem;
 
-  @include breakpoint-down('lg') {
+  @include breakpoint-down("lg") {
     margin: 0 6rem;
   }
 
-  @include breakpoint-down('md') {
+  @include breakpoint-down("md") {
     margin: 0 4rem;
   }
 
-  @include breakpoint-down('sm') {
+  @include breakpoint-down("sm") {
     margin: 0 2rem;
   }
 }

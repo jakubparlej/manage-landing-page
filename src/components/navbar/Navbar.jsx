@@ -28,19 +28,19 @@ function Navbar() {
         </a>
       </div>
       <div className="navbar__btn">
-        <Button title="Get Started" />
+        <Button title="Get Started" style="btn" />
       </div>
       <div className="navbar__menu">
         {toggleMenu ? (
           <RiCloseLine
-          className="fade-in"
+            className="fade-in"
             color="#000"
             size={27}
             onClick={() => setToggleMenu(false)}
           />
         ) : (
           <RiMenu3Line
-           className="fade-in"
+            className="fade-in"
             color="#000"
             size={27}
             onClick={() => setToggleMenu(true)}

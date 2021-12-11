@@ -1,0 +1,41 @@
+@import "../../index.scss";
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    width: 100%;
+    margin-bottom: 4.5rem;
+    color: $darkBlue;
+    font-size: 1.75rem;
+
+    @include breakpoint-up("lg") {
+      font-size: 2.25rem;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.swiper-container {
+  padding: 3rem 3rem !important;
+
+  @include breakpoint-up("md") {
+    padding: 3rem 0;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $brightRed !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $brightRed !important;
+}

@@ -1,0 +1,115 @@
+@import "../../index.scss";
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "form form"
+    "menu1 menu2"
+    "social social"
+    "logo logo"
+    "copy copy";
+  grid-gap: 3rem;
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+  background: $veryDarkBlue;
+
+  @include breakpoint-up("md") {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+    grid-template-areas:
+      "logo menu1 menu2 form"
+      "social menu1 menu2 copy";
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    grid-gap: 3rem;
+  }
+
+  &__logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__social-icons {
+    grid-area: social;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+
+    img:not(:last-child) {
+      @include breakpoint-up("md") {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__menu1,
+  &__menu2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint-up("md") {
+      align-items: start;
+    }
+
+    p {
+      color: $veryLightGray;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: color 200ms ease-in;
+
+      &:hover {
+        color: $brightRed;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__menu1 {
+    grid-area: menu1;
+  }
+
+  &__menu2 {
+    grid-area: menu2;
+  }
+
+  &__form {
+    grid-area: form;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    input {
+      padding: 1rem 2rem;
+      border-radius: 10rem;
+      border: none;
+
+      &:last-child {
+        background: $brightRed;
+        color: #fff;
+      }
+    }
+  }
+
+  &__copyright {
+    grid-area: copy;
+
+    @include breakpoint-up("md") {
+      align-self: end;
+    }
+
+    p {
+      color: $darkGrayishBlue;
+      font-size: 0.875rem;
+      text-align: center;
+    }
+  }
+}

@@ -28,7 +28,7 @@ function Navbar() {
         </a>
       </div>
       <div className="navbar__btn">
-        <Button title="Get Started" style="btn" />
+        <Button title="Get Started" class="btn-primary" />
       </div>
       <div className="navbar__menu">
         {toggleMenu ? (

@@ -7,7 +7,7 @@ function CTA() {
     <div className="cta section__padding">
       <h2>Simplify how your team works today.</h2>
       <div className="cta__button">
-        <Button title="Get Started" style="btn btn-white" />
+        <Button title="Get Started" class="btn-secondary" />
       </div>
     </div>
   );

@@ -17,6 +17,8 @@ import "swiper/components/navigation/navigation.scss";
 SwiperCore.use([Navigation, Pagination, A11y]);
 
 function Testimonials() {
+  const width = window.innerWidth;
+
   return (
     <div className="testimonials section__padding">
       <h2>What they've said</h2>
@@ -26,7 +28,7 @@ function Testimonials() {
           navigation
           pagination={{ clickable: true }}
           spaceBetween={50}
-          slidesPerView={1}
+          slidesPerView={width > 800 ? 3 : 1}
         >
           <SwiperSlide>
             <Testimonial
@@ -58,7 +60,7 @@ function Testimonials() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <Button title="Get Started" style="btn" />
+      <Button title="Get Started" class="btn-primary" />
     </div>
   );
 }

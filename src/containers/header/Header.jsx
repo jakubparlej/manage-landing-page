@@ -14,7 +14,7 @@ function Header() {
           Manage makes it simple for software teams to plan day-to-day tasks
           while keeping the larger team goals in view
         </p>
-        <Button title="Get Started" style="btn" />
+        <Button title="Get Started" class="btn-primary" />
       </div>
 
       <div className="header__image">
